@@ -1,6 +1,8 @@
+from manuseia import Manuseia
 
 
-class Passageiro():
+
+class Passageiro(Manuseia):
 
     def __init__(self, nome: str, cpf: str, email: str, idade: int) -> None:
         self.__nome = nome

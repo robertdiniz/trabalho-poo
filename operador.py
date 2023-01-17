@@ -1,7 +1,8 @@
 from reserva import Reserva
+from manuseia import Manuseia
 
 
-class Operador():  
+class Operador(Manuseia):  
     
 
     def __init__(self) -> None:
