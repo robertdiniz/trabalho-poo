@@ -80,8 +80,8 @@ class Voo():
         self.__tipo_voo = novo_tipo
     
     @tripulacao.setter
-    def tripulacao(self, novo_tripulante: Aeroviario):
-        self.__tripulacao.append(novo_tripulante)
+    def tripulacao(self, novo_tripulante):
+        self.__tripulacao = novo_tripulante
 
     @reservas.setter
     def reservas(self, nova_reserva):
@@ -101,4 +101,12 @@ class Voo():
         print('Você está a bordo com a seguinte tripulação: ')
         for aeroviario in self.tripulacao:
             print(f'{self.tripulacao.nome} como {self.tripulacao.funcao}')
+
+    def tripular(self, novo_tripulante):
+        self.tripulacao.append(novo_tripulante)
+    
+    def ver_tripulacao(self):
+        for x in range(len(self.tripulacao)):
+            print(f'{self.tripulacao[x].nome}')
+
     

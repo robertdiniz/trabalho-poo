@@ -13,7 +13,7 @@ class Operador(Manuseia):
         return Reserva(id, passageiro)
 
 
-    def cancelar_reserva(reserva, voo):
+    def cancelar_reserva(self, voo, reserva):
         for reserva_atual in range(len(voo.reservas)):
             if reserva.id == voo.reservas[reserva_atual].id:
                 del voo.reservas[reserva_atual]
